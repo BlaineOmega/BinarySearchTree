@@ -19,7 +19,10 @@ public class BinarySearchTree {
 	public Node getRoot(){
 		return this.rootNode; 
 	}
-	
+	/**
+	 * @param newNode
+	 * @param rootNode
+	 */
 	//insert Node
 	private void insertNode(Node newNode, Node rootNode){
 		if(rootNode == null){
@@ -51,7 +54,10 @@ public class BinarySearchTree {
 		}
 		
 	}
-	
+	/**
+	 * @param rootNode
+	 * @param seekValue
+	 */
 	//find Node
 	public Node findNode(Node currentNode, int seekValue){
 		Node sNode=null; 
@@ -71,7 +77,10 @@ public class BinarySearchTree {
 		}
 		return sNode; 
 	}
-	
+	/**
+	 * @param rootNode
+	 * @param deleteValue
+	 */
 	//delete Node
 	public void deleteNode(Node currentNode, int deleteValue){
 		if(currentNode != null){
@@ -105,7 +114,9 @@ public class BinarySearchTree {
 			System.out.println("Node not found in tree."); 
 		}
 	}
-	
+	/**
+	 * @param rootNode
+	 */
 	//print tree values
 	public void printTreeNodes(Node rootNode){
 		if(rootNode != null){
@@ -120,6 +131,9 @@ public class BinarySearchTree {
 			System.out.println("Tree is empty."); 
 		}
 	}
+	/**
+	 * @param rootNode
+	 */
 	//get minimum node value
 	public int getMinValue(Node rootNode){
 		int nValue=0; 
